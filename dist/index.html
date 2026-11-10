@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Dusk Trails</title>
+    <meta name="description" content="An isometric voxel offroading game with real suspension physics, playable in the browser." />
+    <script type="module" crossorigin src="./assets/index-CBbSe1j3.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Bcn2yHgU.css">
+  </head>
+  <body>
+    <div id="loading">
+      <div class="logo"><span class="logo-mark"></span><span class="logo-word">Dusk Trails</span></div>
+      <div class="load-track"><i id="load-fill"></i></div>
+      <div id="load-step">Starting up</div>
+      <div id="load-tip"></div>
+    </div>
+
+    <div id="objective" class="panel">
+      <div class="obj-main">
+        <div id="obj-title"></div>
+        <div id="obj-detail"></div>
+      </div>
+      <div id="obj-time"></div>
+      <div class="obj-nav"><span id="obj-arrow">➤</span><span id="obj-dist"></span></div>
+    </div>
+    <div id="bigtext"></div>
+    <div id="keyprompt"></div>
+    <div id="pacenote"><span class="n-arrow"></span><span class="n-sev"></span><span class="n-words"><b class="n-text"></b><small class="n-in"></small></span></div>
+
+    <div id="dash" class="panel">
+      <div class="row">
+        <span id="speed">0</span><span class="unit">km/h</span>
+        <span id="gear">1</span>
+      </div>
+      <div id="rpm"><div id="rpm-fill"></div></div>
+      <div class="inds">
+        <span class="ind" id="ind-4wd">4WD</span>
+        <span class="ind" id="ind-low">Low range</span>
+        <span class="ind" id="ind-flock">Front lock</span>
+        <span class="ind" id="ind-rlock">Rear lock</span>
+        <span class="ind" id="ind-air">Soft tyres</span>
+        <span class="ind" id="ind-winch">Winch</span>
+        <span class="ind" id="ind-manual">Manual</span>
+      </div>
+      <div class="bars" id="bars">
+        <span>Fuel</span><div class="mini"><i id="fuel-fill"></i></div>
+        <span>Condition</span><div class="mini"><i id="health-fill"></i></div>
+      </div>
+      <canvas id="gauges"></canvas>
+      <div class="meta">
+        <span><b id="vehicle">4x4</b></span>
+        <span id="style"></span>
+        <span>on <b id="surface">Dirt</b></span>
+      </div>
+    </div>
+
+    <div id="help" class="panel">
+      <h2>Controls</h2>
+      <div id="help-list"></div>
+    </div>
+
+    <div id="minimap-wrap" class="panel"><canvas id="minimap"></canvas><span class="map-key">M</span></div>
+    <div id="hint"></div>
+    <div id="toast"></div>
+    <div id="menu"><div id="menu-body"></div></div>
+  </body>
+</html>
